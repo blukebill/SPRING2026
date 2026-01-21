@@ -1,0 +1,27 @@
+Computer Vision - Course Description
+  A study of the techniques and applications of computer vision. Topics include: pattern recognition, filtering, texture, segmentation, recognition, 3D vision and case studies.
+
+  We will study image augmentation; basic concepts in image processing such as smoothing, edge and feature detection, segmentation, and deep learning based applications
+
+The Vision Problem
+  How to infer salient properties of 3-D world from time-varying 2-D image projection
+
+Computer Vision Outline
+  Image formation
+  Low-level
+    -single image processing
+    -multiple views
+  Mid-level
+    -estimation, segmentation
+  High-level
+    -recognition
+
+Image Formation
+  3-D geometry 
+  Physics of light
+  Camera properties
+    -focal length
+    -distortion
+  Sampling issues
+    -spatial
+    -temporal
