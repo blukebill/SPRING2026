@@ -1,0 +1,33 @@
+Overview
+* Storage
+* I/O
+* File System
+* Distributed computing and parallel computing
+  concurrent computing
+  related: multiprocessing and multithreading
+  GIL: Global Interpretation Lock
+*virtualization
+* protection
+* security
+
+CH11: Storage
+- HDD (Hard Disk Drive)
+  arm movement,
+  sector, track, cylinder
+  block
+- NVM (Non-Volatile Memory)
+  vs DRAM
+  + SSD (Solid State Drive)
+- disk attachment: BUS
+  + SCSI (small computer system interface)
+  + IDE (Integrated Device Electronics): pc
+  + SAS (Serial Attached SCSI)
+  + SATA (Serial ATA: Advanced Technology Attachment)
+  +NVMe (NVM express)
+   ~ used with SSD
+along with NVMe, PCIe ( P refers to peripheral)
+  PCIe + NVMe
+
+* formatting: 
+  - low-level (physical) formatting
+  - logical formatting: partition
