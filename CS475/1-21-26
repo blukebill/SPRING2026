@@ -25,3 +25,87 @@ Image Formation
   Sampling issues
     -spatial
     -temporal
+
+Low-level: Single Image Processing
+  Filtering
+    -edge
+    -color
+    -local pattern similarity
+  Texture
+    -appearance characterization from the statistics
+      of applying multiple filters
+  3-D structure estimation from
+    -shading
+    -texture
+Low-level: Multiple Views
+  Stereo
+    -structure from two views
+  Structure from motion
+    -what can we learn in general from many views, whether they were taken simultaneously or sequentially?
+
+Mid-level: Estimation, Segmentation
+  Estimation: fitting parameters to data
+    -static (e.g., shape)
+    -dynamic (e.g., tracking)
+  Segmentation/clustering
+    -breaking an image or image sequence into a few meaningful pieces with internal similarity
+
+High-level: recognition
+  Recognition
+    -finding and parametrizing a known object
+    -assignment to known categories using statistics/probability to make best choice
+
+
+Deep Learning
+  Deep Neural Networks
+    -Convolutional neural networks
+  Deep data pipelining
+  Large dataset
+  Heterogeneous computing: GPU, CPU, TPU
+    -parallel computing
+    -synchronization
+
+Geo Applications
+  Agricultural field extraction
+  Flood hazard zone annotation
+
+  SEE: "Wagner, etc. "Deep Learning and Adaptive Graph-Based Growing Contours for Agricultural Field Extraction, 2020""
+
+Image Types
+  Intensity: m x n matrix. can be:
+    -uint8: unsigned 8-bit integer - i.e., in the range [0 ... 255]
+    -double: real number in range [0 ... 1]
+  True color: m x n x 3
+    -three channels: red, green, blue
+  Binary: values are - or 1, type = logical
+
+Image Type Conversions
+  Functions may (FILL THIS OUT FROM SLIDES)
+
+Image Arithmetic
+  Just like matrices, we can do pixelwise arithmetic on images
+  Some useful operations:
+    -differencing: measure of similarity
+    -averaging: blend separate images or smooth a single one over time
+    -thresholding: apply function to each pixel, test value
+
+Thresholding
+  Grayscale -> binary: choose threshold based on histogram of image intensities
+
+Connected Components
+  Uniquely label each n-connected region in binary image
+  4- and 8-connectedness
+
+Operations in Binary Images
+  input
+    -a binary image: B
+    -structuring element: S, e.g., (3x3 matrix of 1's)
+
+  dilated
+  eroded
+
+Geometric Image Comparison: SSD
+  Given a template image I(sub T) and an image I, how to quantify the similarity between them?
+  Vector difference: sum of squared differences (SSD)
+
+  ∑[Iₜ(x,y) - I(x,y)]^2
