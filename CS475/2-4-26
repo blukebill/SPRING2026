@@ -1,0 +1,22 @@
+Linear & Shift Invariance
+  Possible properties of f
+    -superimposition: f(I
+    come back to this
+
+Continuous Convolution
+  -Definition:
+    I`(X0,Y0) = integral(-inf, inf){integral(-inf, inf){f(X0 - X, Y0 - Y)I(X,Y)dxdy}}
+
+    Notation: I` = f * I
+    Propetries
+      -linear
+
+Discrete Convolution
+  Sum instead of integral: I` = K * I is defined by:
+    I`sub(i,j) = SUMMATION(sub(u,v) K sub(i - u, j - v) I sub (u, v)
+
+    Convolution: correlation with kernel rotated 180 degrees
+      -this distinction goes away for isotropic kernels
+
+    Some ways to interpret what the kernel is doing
+      -as simmply a set of weights on the corresponding image pixels  
