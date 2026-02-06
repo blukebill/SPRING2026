@@ -20,3 +20,11 @@ Discrete Convolution
 
     Some ways to interpret what the kernel is doing
       -as simmply a set of weights on the corresponding image pixels  
+
+Dealing with Image Border
+  Only convolve with interior
+    -shrinks image
+  Zero-padding
+  Border replication 
+  Symmetric: reflect image at border b so that
+    I(b + i) = I(b - i)
